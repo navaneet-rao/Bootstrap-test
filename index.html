@@ -74,7 +74,7 @@
             </li>
           </ul>
           <span class="navbar-text" style="cursor: pointer">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a data-toggle="modal" href="#loginModal">
               <span class="fa fa-sign-in"></span> Login
             </a>
           </span>
@@ -85,12 +85,13 @@
     <div
       id="loginModal"
       class="modal fade"
+      tabindex="-1"
       role="dialog"
       style="font-weight: 500"
     >
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
-          <div class="modal-header bg-primary text-white">
+          <div class="modal-header text-white">
             <h4 class="modal-title">Login</h4>
             <button type="button" class="close" data-dismiss="modal">
               &times;
@@ -166,7 +167,7 @@
                 type="button"
                 class="btn btn-lg btn-block bg-warning"
                 data-toggle="modal"
-                data-target="#reservationCard"
+                href="#reservationCard"
                 data-html="true"
                 data-placement="bottom"
               >
@@ -272,7 +273,7 @@
               ><span class="carousel-control-next-icon"></span
             ></a>
             <button class="btn btn-danger btn-sm" id="carouselButton">
-              <span class="fa fa-pause" ></span>
+              <span class="fa fa-pause"></span>
             </button>
           </div>
         </div>
@@ -357,12 +358,13 @@
       <div
         id="reservationCard"
         class="modal fade"
+        tabindex="-1"
         role="dialog"
         style="font-weight: 500"
       >
         <div class="modal-dialog modal-lg" role="content">
           <div class="modal-content">
-            <div class="modal-header bg-warning text-white">
+            <div class="modal-header text-white">
               <h4 class="modal-title">Reserve a Table</h4>
               <button type="button" class="close" data-dismiss="modal">
                 &times;
@@ -598,6 +600,12 @@
           }
         });
       });
+    </script>
+    <script>
+      $("#loginModal").modal(toggle);
+    </script>
+    <script>
+      $("#reservationCard").modal(toggle);
     </script>
   </body>
 </html>

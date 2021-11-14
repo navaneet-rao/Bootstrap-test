@@ -17,7 +17,7 @@ $carousel-item-height: 300px;
 
 .row-content {
   @include zero-margin(50px, 0px);
-  border-bottom: 1px ridge;
+  border-bottom: 2px ridge;
   min-height: 400px;
 }
 
@@ -41,6 +41,7 @@ address {
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0;
+  background-color: rgb(255, 255, 251);
 }
 
 .navbar-dark {
@@ -74,3 +75,24 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+.modal-content {
+  border-radius: 20px;
+  .modal-header {
+    background: $background-dark;
+
+    .close {
+      color: $background-pale;
+    }
+  }
+  .modal-body {
+    background: $background-pale;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .modal-title {
+    color: floralwhite;
+  }
+}
+
+

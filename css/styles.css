@@ -32,6 +32,7 @@ address {
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0;
+  background-color: #fffffb;
 }
 
 .navbar-dark {
@@ -63,4 +64,22 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+.modal-content .modal-header {
+  background: #512da8;
+}
+.modal-content .modal-header .close {
+  color: floralwhite;
+}
+.modal-content .modal-body {
+  background: #d1c4e9;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.modal-content .modal-title {
+  color: floralwhite;
 }
